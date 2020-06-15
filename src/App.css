@@ -1,38 +1,69 @@
-.App {
+:root{
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-auto-rows: 24rem;
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+.card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  color: whitesmoke;
   text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: auto;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#by {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: normal;
+  right: 2rem;
+  bottom: -5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Medium screens */
+@media screen and (min-width: 600px) {
+  .tall {
+    grid-row: span 2 / auto;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .wide {
+    grid-column: span 2 / auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .big {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
   }
+
+  .small {
+    grid-column: span 1 / auto;
+  }
+
+  #cow { background-position: -8rem; }
+  #kingfish { background-position: 0 0;}
+  #city { background-position: -12rem; }
+  #smile { background-position: -3rem; }
+  #charlie { background-position: 3rem; }
+  #sky { background-position: -6rem; }
+  #guy { background-position: -5rem; }
+  #eyes { background-position: 0; }
+  #lana { background-position: -3rem; }
+  #vdp { background-position: -8rem; }
 }
