@@ -21,25 +21,25 @@
   transition: all 0.3s;
 }
 
+.tall {
+  grid-row: span 2 / auto;
+}
+
+.wide {
+  grid-column: span 2 / auto;
+}
+
+.big {
+  grid-row: span 2 / auto;
+  grid-column: span 2 / auto;
+}
+
+.small {
+  grid-column: span 1 / auto;
+}
+
 /* Medium screens */
 @media screen and (min-width: 600px) {
-  .tall {
-    grid-row: span 2 / auto;
-  }
-
-  .wide {
-    grid-column: span 2 / auto;
-  }
-
-  .big {
-    grid-row: span 2 / auto;
-    grid-column: span 2 / auto;
-  }
-
-  .small {
-    grid-column: span 1 / auto;
-  }
-
   #cow { background-position: -8rem; }
   #kingfish { background-position: 0 0;}
   #city { background-position: -12rem; }
