@@ -7,7 +7,7 @@ import elephant from './images/elephant.jpg';
 import eyes from './images/eyes.jpg';
 import fish from './images/fish.jpg';
 import ghost from './images/ghost.jpg';
-import girl from './images/girl.jpg';
+import girls from './images/girls.jpg';
 import glasses from './images/glasses.jpg';
 import kingfish from './images/kingfish.jpg';
 import koi from './images/koi.jpg';
@@ -60,7 +60,7 @@ const Images = [
   { url: eyes, size: small, id: 'eyes' },
   { url: lana, size: tall, id: 'lana' },
   { url: vdp, size: small, id: 'vdp' },
-  { url: girl, size: big, id: 'girl' },
+  { url: girls, size: big, id: 'girl' },
   { url: spartan, size: small, id: 'spartan' },
   { url: ghost, size: small, id: 'ghost' },
   { url: net, size: small, id: 'net' },
